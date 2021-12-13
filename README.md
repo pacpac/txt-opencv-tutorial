@@ -3,7 +3,7 @@
 ```bash
 mkdir build
 cd build
-cmake -DCMAKE_TOOLCHAIN_FILE=../txt_toolchain.cmake ..
+cmake -DCMAKE_TOOLCHAIN_FILE=../txt-toolchain.cmake ..
 cmake --build .
 ```
 
