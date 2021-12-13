@@ -1,0 +1,14 @@
+set(CMAKE_SYSTEM_NAME Linux)
+set(CMAKE_SYSTEM_PROCESSOR arm)
+
+set(tools /opt/tools/gcc-linaro-7.4.1-2019.02-x86_64_arm-linux-gnueabihf)
+set(CMAKE_C_COMPILER ${tools}/bin/arm-linux-gnueabihf-gcc)
+set(CMAKE_CXX_COMPILER ${tools}/bin/arm-linux-gnueabihf-g++)
+
+set(CMAKE_FIND_ROOT_PATH_MODE_PROGRAM NEVER)
+set(CMAKE_FIND_ROOT_PATH_MODE_LIBRARY ONLY)
+set(CMAKE_FIND_ROOT_PATH_MODE_INCLUDE ONLY)
+set(CMAKE_FIND_ROOT_PATH_MODE_PACKAGE ONLY)
+
+set(ARM_LINUX_SYSROOT /usr/include)
+set(CMAKE_FIND_ROOT_PATH ${CMAKE_FIND_ROOT_PATH} ${ARM_LINUX_SYSROOT})
