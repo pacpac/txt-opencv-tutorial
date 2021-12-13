@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.1)
 
 project( txt-opencv-tutorial CXX )
 
-set( OpenCV_DIR ./txt-opencv-build/install/opencv/share/OpenCV )
+set( OpenCV_DIR ../txt-opencv-build/install/opencv/share/OpenCV )
 
 find_package( OpenCV REQUIRED core videoio imgproc imgcodecs )
 include_directories( ${OpenCV_INCLUDE_DIRS} )
